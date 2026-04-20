@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riko Shigeta Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">Riko</h1>
+
+      <input type="checkbox" id="menu-toggle" hidden>
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+  <section class="fv">
+    <div class="fv-inner">
+      <div class="fv-left">
+        <p class="fv-sub">Web Designer</p>
+        <h1>Riko <br>
+          Shigeta</h1>
+        <p class="fv-catch">
+          ユーザーに寄り添う<br>
+          シンプルで伝わるデザイン
+        </p>
+        <a href="contact.html" class="btn">お問い合わせ</a>
+      </div>
+      <div class="fv-right">
+        <img src="images/fv.jpg" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="title fadeIn">About</h2>
+      <div class="about-inner">
+        <div class="about-left">
+          <img src="images/about.jpg" alt="About Image">
+        </div>
+        <div class="about-right">
+          <p class="about-lead">
+            見やすく伝わるデザインで<br>
+            成果に繋がるサイトを制作します。
+          </p>
+          <p class="about-text">
+            兵庫県在住。Web制作スクールでデザインとコーディングを学習。<br>
+            ユーザー視点を大切にし、シンプルで分かりやすい設計を意識しています。
+          </p>
+          <ul class="about-skills">
+            <li>LPデザイン / コーディング</li>
+            <li>レスポンシブ対応</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <h2 class="title fadeIn">Works</h2>
+
+      <div class="works-list">
+        <div class="work-card">
+          <div>
+            <img src="images/serame4.jpeg" alt="LPデザイン">
+          </div>
+          <div class="work-body">
+            <div class="work-text">
+              <h3>LPデザイン</h3>
+              <p class="work-description">ターゲットに合わせて柔らかい配色と余白を意識したLPデザイン</p>
+              <p class="skill">
+                photoshop
+              </p>
+            </div>
+            <a href="work1.html" class="btn">View More</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div>
+            <img src="images/cr_sb.png" alt="LPデザイン">
+          </div>
+          <div class="work-body">
+            <div class="work-text">
+              <h3>コーポレートサイト</h3>
+              <p class="work-description">信頼感を意識し、シンプルで見やすい設計。</p>
+              <p class="skill">
+                HTML/CSS/Photoshop
+              </p>
+            </div>
+            <a href="work2.html" class="btn">View More</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div>
+            <img src="images/sbn3.jpg" alt="化粧品ウェブサイト">
+          </div>
+          <div class="work-body">
+            <div class="work-text">
+              <h3>化粧品ウェブサイトデザイン</h3>
+              <p class="work-description">コンバージョンを意識したシンプルで効果的なLPデザイン。</p>
+              <p class="skill">
+                HTML/CSS/JavaScript
+              </p>
+            </div>
+            <a href="work3.html" class="btn">View More</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="contact fadeIn" id="contact">
+    <div class="container">
+      <h2 class="title fadeIn">Contact</h2>
+      <div class="contact-card">
+        <p class="contact-text">ご相談・お見積もりは無料です。お気軽にご相談ください。</p>
+        <a href="#" class="btn">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 Riko Shigeta Portfolio</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
