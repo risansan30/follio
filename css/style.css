@@ -23,7 +23,7 @@ section:nth-of-type(even) {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #1f1e63;
+    color: #bc6e2e;
 }
 
 .title::after {
@@ -31,7 +31,7 @@ section:nth-of-type(even) {
     display: block;
     width: 60px;
     height: 4px;
-    background: #1f1e63;
+    background: #bc6e2e;
     margin: 10px auto 0;
 }
 
@@ -471,7 +471,6 @@ section:nth-of-type(even) {
 .contact-text {
     font-size: 20px;
     margin: 40px 0;
-    color: #1f1e63;
     line-height: 1.8;
 }
 
@@ -580,9 +579,10 @@ section:nth-of-type(even) {
 
     .fv-right {
         position: absolute;
-        top: 280px;
-        right: 0;
-        width: 455px;
+        top: 300px;
+        right: -50px;
+        width: 400px;
+        text-align: right;
     }
 
     .fv-left::after {
@@ -609,7 +609,7 @@ section:nth-of-type(even) {
     .about-left img {
         margin: 0 auto;
         width: 70%;
-        border-radius: 100px;
+        border-radius: 50px;
     }
 
     .about-lead,
@@ -634,5 +634,21 @@ section:nth-of-type(even) {
 
     .work-card img {
         object-fit: contain;
+    }
+
+    /*詳細ページ*/
+    .work-container {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 550px;
+    }
+
+    .work-fv {
+        margin: 20px 0;
+    }
+
+    .work-section {
+        margin: 50px 0;
     }
 }
