@@ -12,7 +12,8 @@ section:nth-of-type(even) {
 }
 
 .container {
-    max-width: 1100px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 80px 20px;
 }
@@ -568,20 +569,13 @@ section:nth-of-type(even) {
         background: #f0f0f0;
     }
 
-    .fv-inner {
-        width: 100%;
-    }
-
-    .fv-left {
-        margin-left: calc(50% - 50vw);
-        width: 75%;
-    }
-
     .fv-right {
         position: absolute;
         top: 300px;
-        right: -50px;
-        width: 400px;
+        right: 0;
+        width: 55vw;
+        height: auto;
+        padding: 20px 0 0;
         text-align: right;
     }
 
