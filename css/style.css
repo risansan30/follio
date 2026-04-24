@@ -427,6 +427,7 @@ section:nth-of-type(even) {
 }
 
 .modal {
+    text-align: center;
     display: none;
     position: fixed;
     top: 0;
@@ -443,7 +444,7 @@ section:nth-of-type(even) {
 }
 
 .modal img {
-    max-width: 50%;
+    max-width: 40%;
     object-fit: contain;
     height: auto;
     border-radius: 20px;
@@ -642,7 +643,15 @@ section:nth-of-type(even) {
         margin: 20px 0;
     }
 
+    .work-inner {
+        padding: 30px;
+    }
+
     .work-section {
         margin: 50px 0;
+    }
+
+    .work-section ul {
+        text-align: center;
     }
 }
