@@ -395,7 +395,7 @@ section:nth-of-type(even) {
 }
 
 .serif {
-    font-family: 'sans-serif';
+    font-family: sans-serif;
 }
 
 .trigger {
@@ -486,7 +486,7 @@ section:nth-of-type(even) {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    box-shadow: 0 10 20 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact .btn:hover {
