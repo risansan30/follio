@@ -870,6 +870,66 @@ section:nth-of-type(even) {
     border-top: 1px solid var(--color-border);
 }
 
+.improve-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+}
+
+.improve-item {
+    padding: 20px 24px;
+    background: var(--color-bg-soft);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.improve-item h3 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: var(--fs-body);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.improve-num {
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.improve-before,
+.improve-after {
+    line-height: 1.9;
+    color: var(--color-text-soft);
+    font-size: var(--fs-small);
+}
+
+.improve-before {
+    margin-bottom: 8px;
+}
+
+.improve-tag {
+    display: inline-block;
+    min-width: 3.5em;
+    margin-right: 8px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
+}
+
+.improve-note {
+    margin-top: 16px;
+    font-size: var(--fs-small);
+    color: var(--color-text-soft);
+    font-style: italic;
+}
+
 .serif {
     font-family: "Noto Sans JP", sans-serif;
 }
