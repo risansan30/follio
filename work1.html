@@ -4,54 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <title>LP制作（架空案件） | Riko Shigeta ポートフォリオ</title>
+  <meta name="description" content="20〜30代女性向け美容液LPの制作事例。安心感と清潔感を意識した余白の広い柔らかな配色デザイン。">
+  <meta name="theme-color" content="#9c5420">
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%239c5420'/%3E%3Ctext x='32' y='42' font-size='30' font-family='sans-serif' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>制作物1</title>
 </head>
 
 <body>
-  <div class="work-container">
-    <div class="work-fv">
-      <div class="trigger">
-        <img src="images/serame1.jpg" alt="Hero Image">
-      </div>
-      <div class="modal">
-        <span class="close">&times;</span>
-        <img src="images/serame.jpg" alt="Hero Image">
-      </div>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="header work-detail-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Riko</a>
+      <nav aria-label="メインナビゲーション">
+        <ul class="menu">
+          <li><a href="index.html#works">Works</a></li>
+          <li class="nav-cta"><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class=" work-inner">
-      <h1 class="work-title">LP制作（架空案件）</h1>
-      <div class="work-section">
-        <h2> 制作目的</h2>
-        <p>
-          20~30代の女性をターゲットにした美容液のLPを制作。
-          集客と予約導線の強化を目的としました。
-        </p>
+  </header>
+
+  <main id="main">
+    <div class="work-wrap">
+      <a href="index.html#works" class="back-link">&larr; 作品一覧に戻る</a>
+
+      <div class="work-container">
+      <div class="work-fv">
+        <div class="trigger">
+          <picture>
+            <source srcset="images/optimized/work1-hero.webp" type="image/webp">
+            <img src="images/optimized/work1-hero.jpg" alt="LP制作物のファーストビュー画像。クリックで拡大表示できます" width="640"
+              height="575" fetchpriority="high">
+          </picture>
+        </div>
       </div>
 
-      <div class="work-section">
-        <h2> デザイン意図</h2>
-        <p>安心感と清潔感を意識し、余白を広く取り、柔らかい配色で構成しました。</p>
+      <div class="work-inner">
+        <h1 class="work-title">LP制作（架空案件）</h1>
+
+        <div class="work-section">
+          <h2>制作目的</h2>
+          <p>20〜30代の女性をターゲットにした美容液のLPを制作。集客と予約導線の強化を目的としました。</p>
+        </div>
+
+        <div class="work-section">
+          <h2>デザイン意図</h2>
+          <p>安心感と清潔感を意識し、余白を広く取り、柔らかい配色で構成しました。</p>
+        </div>
+
+        <div class="work-section">
+          <h2>使用スキル</h2>
+          <ul>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+
+        <div class="work-section">
+          <h2>工夫した点</h2>
+          <p>ファーストビューで訴求が伝わるようにキャッチコピーを大きく配置し、CTAボタンを目立たせることで、ユーザーの行動を促す設計にしました。</p>
+        </div>
+
+        <div class="work-cta">
+          <p class="contact-email">この制作物について、ご質問・ご相談はお気軽にどうぞ。</p>
+          <a href="index.html#contact" class="btn">お問い合わせ</a>
+        </div>
       </div>
-      <div class="work-section">
-        <h2>使用スキル</h2>
-        <ul>
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
       </div>
-      <div class="work-section">
-        <h2>工夫した点</h2>
-        <p>ファーストビューで訴求が伝わるようにキャッチコピーを大きく配置し、
-          CTAボタンを目立たせることで、ユーザーの行動を促す設計にしました。
-        </p>
+
+      <div class="modal">
+        <button type="button" class="close" aria-label="拡大画像を閉じる">&times;</button>
+        <div class="modal-scroll">
+          <picture>
+            <source srcset="images/optimized/work1-modal.webp" type="image/webp">
+            <img src="images/optimized/work1-modal.jpg" alt="LP制作物の拡大画像">
+          </picture>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-nav">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#works">Works</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <small>&copy; 2024 Riko Shigeta Portfolio</small>
+  </footer>
+
   <script src="js/script.js" defer></script>
 </body>
 

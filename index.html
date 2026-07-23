@@ -3,154 +3,322 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riko Shigeta（繁田理子） | Webデザイナー ポートフォリオ</title>
+  <meta name="description" content="Webデザイナー・繁田理子のポートフォリオサイト。LPデザイン、コーポレートサイト制作など、ユーザー視点でシンプルに伝わるデザインを得意としています。">
+  <meta name="author" content="Riko Shigeta">
+  <meta name="theme-color" content="#9c5420">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Riko Shigeta（繁田理子） | Webデザイナー ポートフォリオ">
+  <meta property="og:description" content="ユーザーに寄り添う、シンプルで伝わるデザイン。Webデザイナー・繁田理子のポートフォリオです。">
+  <meta property="og:image" content="images/fv.jpg">
+  <meta property="og:locale" content="ja_JP">
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%239c5420'/%3E%3Ctext x='32' y='42' font-size='30' font-family='sans-serif' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riko Shigeta Portfolio</title>
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="images/optimized/hero.webp" fetchpriority="high">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Riko Shigeta",
+    "alternateName": "繁田理子",
+    "jobTitle": "Webデザイナー",
+    "description": "ユーザーに寄り添う、シンプルで伝わるデザインを制作するWebデザイナー。"
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
   <header class="header">
     <div class="header-inner">
-      <h1 class="logo">Riko</h1>
+      <a href="#main" class="logo">Riko</a>
 
-      <input type="checkbox" id="menu-toggle" hidden>
-      <label for="menu-toggle" class="menu-icon">
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="メニューを開閉する">
         <span></span>
         <span></span>
         <span></span>
-      </label>
+      </button>
 
-      <nav class="nav">
+      <nav class="nav" id="primary-nav" aria-label="メインナビゲーション">
         <ul class="menu">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta"><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
-
     </div>
-
   </header>
-  <section class="fv">
-    <div class="fv-inner">
-      <div class="fv-left">
-        <p class="fv-sub">Web Designer</p>
-        <h1>Riko <br>
-          Shigeta</h1>
-        <p class="fv-catch">
-          ユーザーに寄り添う<br>
-          シンプルで伝わるデザイン
-        </p>
-        <a href="#contact" class="btn">お問い合わせ</a>
-      </div>
-      <div class="fv-right">
-        <img src="images/fv.jpg" alt="Hero Image">
-      </div>
-    </div>
-  </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="title fadeIn">About</h2>
-      <div class="about-inner">
-        <div class="about-left">
-          <img src="images/about.jpg" alt="About Image">
-        </div>
-        <div class="about-right">
-          <p class="about-lead">
-            見やすく伝わるデザインで<br>
-            成果に繋がるサイトを制作します。
+  <main id="main">
+    <section class="fv">
+      <div class="fv-inner">
+        <div class="fv-left">
+          <p class="fv-sub">Web Designer</p>
+          <h1>Riko<br>Shigeta</h1>
+          <p class="fv-catch">
+            ユーザーに寄り添う<br>
+            シンプルで伝わるデザイン
           </p>
-          <p class="about-text">
-            兵庫県在住。Web制作スクールでデザインとコーディングを学習。<br>
-            ユーザー視点を大切にし、シンプルで分かりやすい設計を意識しています。
+          <a href="#contact" class="btn">お問い合わせ</a>
+        </div>
+        <div class="fv-right">
+          <picture>
+            <source srcset="images/optimized/hero.webp" type="image/webp">
+            <img src="images/optimized/hero.jpg" alt="Riko Shigetaのプロフィール写真" width="900" height="600"
+              fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue">
+        Scroll
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="title reveal">About</h2>
+        <div class="about-inner">
+          <div class="about-left reveal">
+            <picture>
+              <source srcset="images/optimized/about.webp" type="image/webp">
+              <img src="images/optimized/about.jpg" alt="制作風景のイメージ写真" width="700" height="700" loading="lazy">
+            </picture>
+          </div>
+          <div class="about-right reveal">
+            <p class="about-lead">
+              見やすく伝わるデザインで<br>
+              成果に繋がるサイトを制作します。
+            </p>
+            <p class="about-text">
+              兵庫県在住。Web制作スクールでデザインとコーディングを学習しました。<br><br>
+              ユーザー視点を大切にし、シンプルで分かりやすい設計を意識しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="title reveal">Skills</h2>
+        <p class="section-lead reveal">デザインからコーディングまで、一貫して制作できるスキルセットです。</p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-stagger="0">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 16l4.5-9L13 13l3-5 4 8" />
+                <path d="M3 20h18" />
+              </svg>
+            </div>
+            <h3>LPデザイン</h3>
+            <p>ターゲットに合わせた配色と余白設計で、伝わる・行動につながる訴求を組み立てます。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="80">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 9l-4 4 4 4M16 9l4 4-4 4" />
+              </svg>
+            </div>
+            <h3>コーディング</h3>
+            <p>セマンティックなHTML/CSSと軽量なJavaScriptで、保守しやすい実装を心がけています。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="160">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="14" height="10" rx="1" />
+                <path d="M8 20h6M10 15v5" />
+              </svg>
+            </div>
+            <h3>レスポンシブ対応</h3>
+            <p>スマホ・タブレット・PCまで、あらゆる画面幅で崩れない可変レイアウトを実装します。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="240">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h10" />
+              </svg>
+            </div>
+            <h3>HTML / CSS</h3>
+            <p>アクセシビリティとSEOを意識したマークアップで、土台からしっかり作り込みます。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="320">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v4M12 17v4M3 12h4M17 12h4" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </div>
+            <h3>JavaScript</h3>
+            <p>スクロール演出やモーダル、UIの細かな挙動を実装し、体験を丁寧に仕上げます。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="400">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3a9 9 0 000 18 4.5 4.5 0 010-9 4.5 4.5 0 000-9z" />
+              </svg>
+            </div>
+            <h3>Photoshop</h3>
+            <p>写真の補正・合成からバナー制作まで、ビジュアル面の仕上げを幅広く対応します。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="480">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 4v10l-7 4-7-4V7z" />
+                <path d="M12 3v18" />
+              </svg>
+            </div>
+            <h3>Illustrator</h3>
+            <p>ロゴやアイコンなど、ベクター素材の作成でブランドの世界観を形にします。</p>
+          </div>
+
+          <div class="skill-card reveal" data-stagger="560">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 3h5a4 4 0 010 8H8z" />
+                <path d="M8 11h5a4 4 0 010 8H8z" />
+                <path d="M8 3v16" />
+              </svg>
+            </div>
+            <h3>Figma</h3>
+            <p>ワイヤーフレームからUIデザイン、共有・フィードバックまで一気通貫で対応します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <h2 class="title reveal">Works</h2>
+        <p class="section-lead reveal">これまでに制作したLP・コーポレートサイトの一部です。</p>
+
+        <div class="works-list">
+          <article class="work-card reveal" data-stagger="0">
+            <div class="work-thumb">
+              <picture>
+                <source srcset="images/optimized/work1-thumb.webp" type="image/webp">
+                <img src="images/optimized/work1-thumb.jpg" alt="美容液LPデザインのサムネイル" loading="lazy" width="600"
+                  height="400">
+              </picture>
+            </div>
+            <div class="work-body">
+              <div class="work-text">
+                <h3>LPデザイン</h3>
+                <p class="work-description">ターゲットに合わせて柔らかい配色と余白を意識したLPデザイン。</p>
+                <ul class="skill-tags">
+                  <li>Photoshop</li>
+                </ul>
+              </div>
+              <a href="work1.html" class="btn-outline">View More</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-stagger="80">
+            <div class="work-thumb">
+              <picture>
+                <source srcset="images/optimized/work2-thumb.webp" type="image/webp">
+                <img src="images/optimized/work2-thumb.jpg" alt="コーポレートサイトデザインのサムネイル" loading="lazy" width="600"
+                  height="400">
+              </picture>
+            </div>
+            <div class="work-body">
+              <div class="work-text">
+                <h3>コーポレートサイト</h3>
+                <p class="work-description">信頼感を意識し、シンプルで見やすい設計。</p>
+                <ul class="skill-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Photoshop</li>
+                </ul>
+              </div>
+              <a href="work2.html" class="btn-outline">View More</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-stagger="160">
+            <div class="work-thumb">
+              <picture>
+                <source srcset="images/optimized/work3-thumb.webp" type="image/webp">
+                <img src="images/optimized/work3-thumb.jpg" alt="化粧品ウェブサイトデザインのサムネイル" loading="lazy" width="600"
+                  height="400">
+              </picture>
+            </div>
+            <div class="work-body">
+              <div class="work-text">
+                <h3>化粧品ウェブサイトデザイン</h3>
+                <p class="work-description">30〜40代の女性をターゲットにした化粧品のサイトデザイン。</p>
+                <ul class="skill-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <a href="work3.html" class="btn-outline">View More</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="works-cta reveal">気になる制作物がありましたら、お気軽に<a href="#contact">お問い合わせ</a>ください。</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="title reveal">Contact</h2>
+        <div class="contact-card reveal">
+          <p class="contact-text">ご相談・お見積もりは無料です。お気軽にご連絡ください。</p>
+          <a href="mailto:your@example.com" class="btn">メールでお問い合わせ</a>
+          <p class="contact-note">通常1〜2営業日以内にご返信いたします。</p>
+          <p class="contact-email">
+            <a href="mailto:your@example.com">your@example.com</a>
           </p>
-          <ul class="about-skills">
-            <li>LPデザイン / コーディング</li>
-            <li>レスポンシブ対応</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Figma</li>
-          </ul>
         </div>
       </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="works" id="works">
-    <div class="container">
-      <h2 class="title fadeIn">Works</h2>
-
-      <div class="works-list">
-        <div class="work-card">
-          <div>
-            <img src="images/serame4.jpeg" alt="LPデザイン">
-          </div>
-          <div class="work-body">
-            <div class="work-text">
-              <h3>LPデザイン</h3>
-              <p class="work-description">ターゲットに合わせて柔らかい配色と余白を意識したLPデザイン</p>
-              <p class="skill">
-                photoshop
-              </p>
-            </div>
-            <a href="work1.html" class="btn">View More</a>
-          </div>
-        </div>
-        <div class="work-card">
-          <div>
-            <img src="images/cr_sb.png" alt="LPデザイン">
-          </div>
-          <div class="work-body">
-            <div class="work-text">
-              <h3>コーポレートサイト</h3>
-              <p class="work-description">信頼感を意識し、シンプルで見やすい設計。</p>
-              <p class="skill">
-                HTML/CSS/Photoshop
-              </p>
-            </div>
-            <a href="work2.html" class="btn">View More</a>
-          </div>
-        </div>
-        <div class="work-card">
-          <div>
-            <img src="images/sbn3.jpg" alt="化粧品ウェブサイト">
-          </div>
-          <div class="work-body">
-            <div class="work-text">
-              <h3>化粧品ウェブサイトデザイン</h3>
-              <p class="work-description">30〜40代の女性をターゲットにした化粧品のサイトデザイン。
-
-              </p>
-              <p class="skill">
-                HTML/CSS/JavaScript
-              </p>
-            </div>
-            <a href="work3.html" class="btn">View More</a>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="contact fadeIn" id="contact">
-    <div class="container">
-      <h2 class="title fadeIn">Contact</h2>
-      <div class="contact-card">
-        <p class="contact-text">ご相談・お見積もりは無料です。お気軽にご相談ください。</p>
-        <a href="#" class="btn">お問い合わせ</a>
-      </div>
-    </div>
-  </section>
   <footer class="footer">
-    <p>&copy; 2024 Riko Shigeta Portfolio</p>
+    <ul class="footer-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <small>&copy; 2024 Riko Shigeta Portfolio</small>
   </footer>
-  <script src="js/script.js"></script>
+
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>

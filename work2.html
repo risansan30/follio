@@ -4,48 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <title>コーポレートサイト制作（架空案件） | Riko Shigeta ポートフォリオ</title>
+  <meta name="description" content="企業のブランドイメージ向上を目的としたコーポレートサイト制作事例。信頼感とプロフェッショナルさを表現したシンプルなデザイン。">
+  <meta name="theme-color" content="#9c5420">
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%239c5420'/%3E%3Ctext x='32' y='42' font-size='30' font-family='sans-serif' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>制作物2</title>
 </head>
 
 <body>
-  <div class="work-container">
-    <div class="work-fv">
-      <div class="trigger">
-        <a href="https://risansan30.github.io/lit/" target="_blank" rel="noopener noreferrer"><img src="images/cr_sb.png" alt="Hero Image"></a>
-      </div>
-    </div>
-    <div class="work-inner">
-      <h1 class="work-title">コーポレートサイト（架空案件）</h1>
-      <div class="work-section">
-        <h2> 制作目的</h2>
-        <p>企業のブランドイメージを向上させるためのコーポレートサイトを制作。
-          会社の理念やサービスを分かりやすく伝えることを目的としました。
-        </p>
-      </div>
-      <div class="work-section">
-        <h2> デザイン意図</h2>
-        <p>信頼感とプロフェッショナルさを表現するため、シンプルで洗練されたデザインを採用しました。
-          カラーは企業カラーを基調にし、余白を活かして情報が見やすいレイアウトにしました。
-        </p>
-      </div>
-      <div class="work-section">
-        <h2>使用スキル</h2>
-        <ul>
-          <li>Photoshop</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="header work-detail-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Riko</a>
+      <nav aria-label="メインナビゲーション">
+        <ul class="menu">
+          <li><a href="index.html#works">Works</a></li>
+          <li class="nav-cta"><a href="index.html#contact">お問い合わせ</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="work-wrap">
+      <a href="index.html#works" class="back-link">&larr; 作品一覧に戻る</a>
+
+      <div class="work-container">
+      <div class="work-fv">
+        <div class="trigger">
+          <a href="https://risansan30.github.io/lit/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source srcset="images/optimized/work2-hero.webp" type="image/webp">
+              <img src="images/optimized/work2-hero.jpg" alt="コーポレートサイト制作物の画像。クリックで実際のサイトを開きます" width="700"
+                height="767" fetchpriority="high">
+            </picture>
+          </a>
+        </div>
       </div>
-      <div class="work-section">
-        <h2>工夫した点</h2>
-        <p>アニメーションを活用し、分かりやすく見やすい設計にすることで、ユーザーの視線を誘導する工夫をしました。</p>
+
+      <div class="work-inner">
+        <h1 class="work-title">コーポレートサイト（架空案件）</h1>
+
+        <div class="work-section">
+          <h2>制作目的</h2>
+          <p>企業のブランドイメージを向上させるためのコーポレートサイトを制作。会社の理念やサービスを分かりやすく伝えることを目的としました。</p>
+        </div>
+
+        <div class="work-section">
+          <h2>デザイン意図</h2>
+          <p>信頼感とプロフェッショナルさを表現するため、シンプルで洗練されたデザインを採用しました。カラーは企業カラーを基調にし、余白を活かして情報が見やすいレイアウトにしました。</p>
+        </div>
+
+        <div class="work-section">
+          <h2>使用スキル</h2>
+          <ul>
+            <li>Photoshop</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="work-section">
+          <h2>工夫した点</h2>
+          <p>アニメーションを活用し、分かりやすく見やすい設計にすることで、ユーザーの視線を誘導する工夫をしました。</p>
+        </div>
+
+        <div class="work-cta">
+          <p class="contact-email">この制作物について、ご質問・ご相談はお気軽にどうぞ。</p>
+          <a href="index.html#contact" class="btn">お問い合わせ</a>
+        </div>
+      </div>
       </div>
     </div>
-    <script src="js/script.js" defer></script>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-nav">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#works">Works</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <small>&copy; 2024 Riko Shigeta Portfolio</small>
+  </footer>
+
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
